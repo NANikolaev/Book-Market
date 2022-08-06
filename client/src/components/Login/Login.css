@@ -1,0 +1,70 @@
+@media screen and (max-width: 1366px) {
+    .login-container{
+        width: 30%;
+
+    }
+}
+@media screen and (min-width: 1367px) {
+    .login-container{
+        width: 25%;
+ 
+    }
+}
+
+.login { 
+    background-image: url("/public/images/vintage-books-seamless-pattern-vector-3132570.jpg") ;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    margin: 1% 1%;
+    padding: 2%;
+    
+}
+
+.login-container .mb-3 {
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(146, 139, 139);
+
+}
+.login-container .form-control{
+    box-shadow: rgba(99, 86, 86, 0.35) 0px 5px 15px;
+}
+
+.login-container h2 {
+    text-align: center; 
+     text-decoration: none;
+    color:white;
+    font-size: 55px;
+    padding: 0;
+    font-weight: 900;
+    
+}
+.login-form {
+    margin: 7%;
+    padding: 12%;
+    border-radius: 35px;
+    background-color: rgb(255 235 177);
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+}
+.login-form .form-control:focus {
+    border: none;
+    outline: 3px solid rgb(253 238 224);
+}
+
+
+#submit{ 
+    justify-content: center;
+    width: 45%;
+    margin-left: 27%;
+    color: rgb(129, 116, 116);
+    font-weight: bold;
+}

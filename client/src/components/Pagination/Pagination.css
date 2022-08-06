@@ -1,0 +1,17 @@
+.pagination {
+    justify-content: center;
+}
+
+.pagination a {
+    background: rgb(218, 211, 204);
+    color: rgb(100, 95, 90);
+
+}
+
+.pagination a:focus {
+    outline: 3px solid rgb(218, 211, 204);
+    color:rgb(100, 95, 90);
+}
+.pagination a:hover{
+    color:rgb(100, 95, 90);
+}

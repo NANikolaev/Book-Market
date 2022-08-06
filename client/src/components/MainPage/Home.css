@@ -1,0 +1,120 @@
+@media screen and (max-width: 1366px) {
+    #info ul img{
+        width: 125px;
+        height: 200px;
+    }
+    #info ul{
+        display: grid;
+        grid-template-columns: 19% 19% 19% 19% 19%;
+        column-gap: 5px;
+        text-align: center;
+    }
+    
+}
+@media screen and (min-width: 1367px) {
+    #info ul img{
+        width: 150px;
+        height: 220px;  
+    }
+    #info ul{
+        display: grid;
+        grid-template-columns: 13% 13% 13% 13% 13%;
+        justify-content: center;
+        column-gap: 24px;
+        text-align: center;
+    }
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5%;
+    background-color: rgb(218, 211, 204);
+    border-radius: 6px;
+}
+.home-container h2{
+    text-underline-position: under;
+    font-family: cursive;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5%;
+    padding: 2%;
+    background-color: rgb(181 179 170);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 6px;
+
+}
+.intro-image{
+    padding: 1%;
+    border-radius: 6px;
+    background: beige;
+}
+
+.intro-image img {
+    width: 500px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 5px;
+
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1%;
+}
+#info ul img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 10%;
+}
+#info ul a{
+    margin-top: 1%;
+    color: #443535;
+    font-weight: 700;
+    text-decoration: none;
+}
+#info h2 {
+    font-family: cursive;
+    color: rgb(240, 231, 231);
+    margin-top: 1%;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.title-dsc {
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.my-books{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title-dsc h3 {
+    color: #8f7a7a;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "italic",sans-serif;
+    margin-top: 10%;
+}
+#most-viewed {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border-top: solid 1px #874d4d;
+    row-gap: 50px;
+    margin: 0.5%;
+    margin-bottom: 2%;
+    padding: 2%;
+    padding-bottom: 5%;
+    background-color: rgb(179, 187, 187);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}

@@ -1,0 +1,31 @@
+.btn-cart{
+    width: 135px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(90 183 183);
+    color: rgb(237 245 245);
+    font-weight: bolder;
+}
+.btn-cart:hover{ 
+    background-color: rgb(90, 200, 200);
+ }
+.popover.show.bs-popover-auto{
+ border: none;
+ border-radius: 6px;
+ max-width: max-content;
+}
+.popover-header{
+    font-family: "Roboto",sans-serif;
+    border-radius: 6px;
+}
+.popover-header span{
+    font-weight: 800;
+}
+.popover-header.success{
+    background-color: #75df78;
+}
+
+.popover-header.fail{
+    background-color: #ff720d;;
+}
