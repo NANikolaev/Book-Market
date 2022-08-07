@@ -38,7 +38,7 @@ function Cart() {
                        <h3>Total Cost: {totalPrice}$</h3>
                        <OrderButton setOrders={setOrders}/>
                       </>
-                    : <h2>No Added books yet . Check out - <Link to="/books">Catalog</Link></h2>
+                    : <h2>Cart is empty. Check out - <Link to="/books">Catalog</Link></h2>
                 }
 
             </div>
