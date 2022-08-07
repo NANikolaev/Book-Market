@@ -17,7 +17,7 @@ In each terminal type:
   3. After the previous operation is done - "npm start".
 
 
-**Note: The server for this project uses `MongoDB` for Database. If you dont have it installed locally 
+**Note: The server for this project uses `MongoDB` for Database. If you dont have it installed locally -
  [Download it from here](https://www.mongodb.com/try/download/community)**
 
 
