@@ -17,6 +17,7 @@ import Details from './components/Details/Details';
 import Search from './components/Search/Search';
 import Cart from './components/Cart/Cart';
 import Offers from './components/Offers/Offers';
+import Page404 from './components/404/404';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <main>
 
           <Routes>
+            
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
@@ -51,8 +53,9 @@ function App() {
               <Route path='/user/offers' element={<Offers />} />
             </Route>
 
+            <Route path='*' element={<Page404 />} />
           </Routes>
-
+          
         </main>
       </div>
     </OuthContext.Provider>

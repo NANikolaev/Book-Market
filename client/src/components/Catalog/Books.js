@@ -44,7 +44,9 @@ function Books() {
         ? <Loader />
         : <Routes>
           <Route path='/' element={<BooksByGenre books={catalog} />} />
+          <Route path="*" element={<BooksByGenre books={catalog} />} />
           <Route path={genre} element={<BooksByGenre genre={genre} books={sortedBooks} />} />
+          
         </Routes>
       }
 

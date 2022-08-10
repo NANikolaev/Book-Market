@@ -21,7 +21,7 @@ function User() {
     const [user, changeUserState,navigate] = useContext(OuthContext)
     
     function logout(){
-        changeUserState(undefined)
+        changeUserState("")
         navigate('/')
     }
 

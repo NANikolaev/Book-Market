@@ -7,10 +7,10 @@ import Description from "./Description/Description";
 import Comments from "./Comments/Comments";
 import Edit from "./Edit/Edit";
 import AddToCartButton from "../Buttons/AddToCartButton";
-import GuardForGuest from "../../utils/GuardForGuest";
 
 import OuthContext from "../../contexts/OuthContext";
 import { getSpecificBook } from "../../services/bookService";
+
 
 
 function Details() {
@@ -19,6 +19,7 @@ function Details() {
     const [user] = useContext(OuthContext);
     const [book, setBook] = useState({});
     const [active, setActive] = useState("1");
+
 
 
     useEffect(() => {
@@ -75,9 +76,11 @@ function Details() {
                                 <Route path='/' element={<Description description={book.description} />} />
                                 <Route path='description' element={<Description description={book.description} />} />
                                 <Route path='comments' element={<Comments book={book} user={user} />} />
-                                <Route element={<GuardForGuest/>}>
-                                    <Route path='edit' element={<Edit book={book} setBook={setBook} setActive={setActive} />} />
-                                </Route>
+                                <Route path='edit' element={user.id === book.owner
+                                    ? <Edit book={book} setBook={setBook} setActive={setActive} />
+                                    : <Description description={book.description} />
+                                } />
+
 
                             </Routes>
                         </div>

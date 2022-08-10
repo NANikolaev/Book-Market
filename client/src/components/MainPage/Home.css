@@ -33,8 +33,12 @@
     border-radius: 6px;
 }
 .home-container h2{
-    text-underline-position: under;
-    font-family: cursive;
+    text-decoration: none;
+    padding-bottom: 1%;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1.5%;
 }
 
 .intro {
@@ -73,14 +77,18 @@
 }
 #info ul a{
     margin-top: 1%;
-    color: #443535;
+    
+    color: rgb(211 215 215);
     font-weight: 700;
     text-decoration: none;
 }
 #info h2 {
-    font-family: cursive;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
     color: rgb(240, 231, 231);
     margin-top: 1%;
+    margin-bottom: 1%;
     padding: 0;
     text-decoration: none;
 }
