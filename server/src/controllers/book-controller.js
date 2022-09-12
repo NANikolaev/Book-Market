@@ -22,7 +22,7 @@ router.route('/book/:bookId')
 
 .put((req,res,next)=>{
 
-    {!req.user ? res.status(401).json({errors:"You are not outhorized"}): ''}
+    {!req.user ? res.status(401).json({errors:"You are not outhorized"}) : ''}
     
     let bookId=req.params.bookId
     let book=req.body
