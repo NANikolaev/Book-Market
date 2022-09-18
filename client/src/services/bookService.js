@@ -36,7 +36,7 @@ function getSpecificBook(bookId, user) {
     return fetch(url + `/book/${bookId}`, {
         method: "PATCH",
         headers: { 'Content-Type': "application/json" },
-        body: JSON.stringify(user)
+        body: JSON.stringify({user})
     })
         .then(res => res.json())
 }

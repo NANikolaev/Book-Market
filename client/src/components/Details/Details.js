@@ -76,7 +76,7 @@ function Details() {
                                 <Route path='/' element={<Description description={book.description} />} />
                                 <Route path='description' element={<Description description={book.description} />} />
                                 <Route path='comments' element={<Comments book={book} user={user} />} />
-                                <Route path='edit' element={user.id === book.owner
+                                <Route path='edit' element={user && user.id === book.owner
                                     ? <Edit book={book} setBook={setBook} setActive={setActive} />
                                     : <Description description={book.description} />
                                 } />

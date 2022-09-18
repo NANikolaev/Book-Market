@@ -13,5 +13,5 @@ function ifLogged(req, res, next) {
 
 module.exports = (server) => {
     server.use(ifLogged)
-       // server.use(ifError),
+      
 }

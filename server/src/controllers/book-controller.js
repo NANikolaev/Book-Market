@@ -9,8 +9,7 @@ router.route("/books/catalog")
 })
 
 .post((req,res,next)=>{
-    {!req.user ? res.status(401).json({errors:"You are not outhorized"}): ''}
-
+    
     let bookData={...req.body,owner:req.user.id}
     bookService.createBook(bookData)
     .then(book=>res.json(book))
@@ -22,8 +21,6 @@ router.route('/book/:bookId')
 
 .put((req,res,next)=>{
 
-    {!req.user ? res.status(401).json({errors:"You are not outhorized"}) : ''}
-    
     let bookId=req.params.bookId
     let book=req.body
     bookService.updateBook(bookId,book)
@@ -38,7 +35,7 @@ router.route('/book/:bookId')
     .then(book=>res.json(book))
 })
 .post((req,res)=>{
-    {!req.user ? res.status(401).json({errors:"You are not outhorized"}): ''}
+
     let bookId=req.params.bookId 
     let comment={
         username:req.user.username,
@@ -48,7 +45,6 @@ router.route('/book/:bookId')
     .then(book=>res.json(book.comments))
 })
 .delete((req,res)=>{
-    {!req.user ? res.status(401).json({errors:"You are not outhorized"}): ''}
     let bookId=req.params.bookId
     bookService.del(bookId)
     .then(()=>res.json({}))
