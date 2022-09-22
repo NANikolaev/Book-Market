@@ -3,7 +3,7 @@ const password='sonic_tool'
 const db='BookMarket'
 
 module.exports = () => {
-    mongoose.connect(`mongodb+srv://tester:${password}@cluster0.mwgyziz.mongodb.net/${db}?retryWrites=true&w=majority`,
+    mongoose.connect(process.env.MONGODB_URI,
         {
             useNewUrlParser: true,
             useUnifiedTopology: true
