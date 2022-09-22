@@ -11,7 +11,5 @@ module.exports=(server)=>{
         methods:'*',
         credentials:true,
         allowedHeaders:"*",
-        
-
     }))
 }
