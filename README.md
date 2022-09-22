@@ -11,16 +11,9 @@ The project is built for [Softuni.bg](https://www.softuni.bg) `ReactJs` course e
 Open the project directory in your IDE.
 
 ### `Second`
-Open terminal for each one of the sub directories(1 for client and 1 for server).
-
-### `Third`
-In each terminal type:
-  1. cd "name of the sub directory" (example - cd server).
+In terminal type:
+  1. "cd client".
   2. "npm install".
   3. After the previous operation is done - "npm start".
-
-
-**Note: The server for this project uses `MongoDB` for Database. If you dont have it installed locally -
- [Download it from here](https://www.mongodb.com/try/download/community)**
 
 
