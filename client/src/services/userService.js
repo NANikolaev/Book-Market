@@ -57,20 +57,20 @@ function add(bookId, outhRequest) {
         })
 }
 
-function remove(bookId,outhRequest){
-      return outhRequest("DELETE","/user/cart",{bookId})
+function remove(bookId, outhRequest) {
+    return outhRequest("DELETE", "/user/cart", { bookId })
 }
-function order(outhRequest){
-    return outhRequest("PUT","/user/cart")
-}
-
-function getCartContent(outhRequest){
-    return outhRequest("GET","/user/cart")
+function order(outhRequest) {
+    return outhRequest("PUT", "/user/cart")
 }
 
+function getCartContent(outhRequest) {
+    return outhRequest("GET", "/user/cart")
+}
 
-function getUserOffers(outhRequest){
-    return outhRequest("GET","/user/offers")
+
+function getUserOffers(outhRequest) {
+    return outhRequest("GET", "/user/offers")
 }
 
 export {
