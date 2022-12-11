@@ -82,6 +82,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .my-books{
+    object-fit: cover;
     width: 100%;
     height: 300px;
     border-radius: 5px;
