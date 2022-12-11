@@ -1,29 +1,3 @@
-@media screen and (max-width: 1366px) {
-    #info ul img{
-        width: 125px;
-        height: 200px;
-    }
-    #info ul{
-        display: grid;
-        grid-template-columns: 19% 19% 19% 19% 19%;
-        column-gap: 5px;
-        text-align: center;
-    }
-    
-}
-@media screen and (min-width: 1367px) {
-    #info ul img{
-        width: 150px;
-        height: 220px;  
-    }
-    #info ul{
-        display: grid;
-        grid-template-columns: 13% 13% 13% 13% 13%;
-        justify-content: center;
-        column-gap: 24px;
-        text-align: center;
-    }
-}
 
 .home-container {
     display: flex;
@@ -71,13 +45,21 @@
     width: 100%;
     margin: 0 1%;
 }
+#info ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 20px;
+}
+
 #info ul img{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-bottom: 10%;
+    width: 100%;
+    height: 220px;
 }
 #info ul a{
     margin-top: 1%;
-    
+    text-align: center;
     color: rgb(211 215 215);
     font-weight: 700;
     text-decoration: none;
@@ -125,4 +107,11 @@
     background-color: rgb(179, 187, 187);
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+@media screen and (max-width: 1366px) {
+    #info ul{
+        column-gap: 5px;  
+    }
+    
 }
