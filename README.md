@@ -4,6 +4,7 @@ Market about new or used books. Every registered user has the opportunity to add
 
 ## P.S.
 The project is built for [Softuni.bg](https://www.softuni.bg) `ReactJs` course exam.
+Initial server response cause a delay of up to 30 seconds.
 ## To open the project
 
 ### `First`
