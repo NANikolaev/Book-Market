@@ -2,7 +2,7 @@
 
 Market about new or used books. Every registered user has the opportunity to add books in his own private library and sell them or choose books from catalog and store them in his cart and order them whenever he wants. Also, he can comment and share his impression of the book or author.
 
-You can sign in with user profile: [ `username`: Peter , `password`:12345] or create your own profile.
+You can sign in with user profile:[ `username`: Peter , `password`:12345] or create your own profile.
 
 ## P.S.
 Initial server response causes a delay of up to `30` seconds.
