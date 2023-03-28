@@ -85,7 +85,7 @@ export const StyledParagraph = styled(Paragraph)`
 font-size: 14px;
 `
 export const StyledTextArea = styled.textarea`
- padding: 5px;
+ padding: 10px;
  width: 100%;
  height: 200px;
  border-radius: 5px;
@@ -93,6 +93,7 @@ export const StyledTextArea = styled.textarea`
  background: transparent;
  border: 1px solid black;
  box-shadow: ${({ theme }) => theme.shadows.prime};
+ outline: none;
  resize: none;
 `
 export const StyledSubmitInput=styled(SubmitInput)`

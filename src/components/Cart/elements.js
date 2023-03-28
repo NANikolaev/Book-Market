@@ -34,6 +34,7 @@ text-align: start;
 width: 100%;
 `
 export const StyledInnerHeading=styled(InnerHeading)`
+display: ${({show})=>show ? 'block' : "none"};
 text-align: center;
 width: 100%;
 `

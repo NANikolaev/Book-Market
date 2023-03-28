@@ -10,9 +10,10 @@ import { StyledSection,StyledHeading,StyledInnerHeading,StyledParagraph,StyledBu
 
 
 const Cart =()=>{
-
-    const[orders,setOrders]=useState([])
-    const [totalPrice,setTotalPrice]=useState(0);
+    
+    let [show,setShow]=useState(false); 
+    let [orders,setOrders]=useState([]);
+    let [totalPrice,setTotalPrice]=useState(0);
     let outhRequest=useOuthRequest();
 
     useEffect(()=>{
@@ -22,6 +23,7 @@ const Cart =()=>{
          orders.forEach(x => {total+=Number(x.price)});
          setTotalPrice(total.toFixed(2))
          setOrders(orders)
+         setShow(true)
         })
      },[])
 
@@ -34,7 +36,7 @@ const Cart =()=>{
              <StyledParagraph>Total Price: {totalPrice}$</StyledParagraph>
              <StyledButton>Complete Order</StyledButton>
              </>
-           :  <StyledInnerHeading>Cart is empty. Check out - <Link to="/catalog">Catalog</Link></StyledInnerHeading>
+           :  <StyledInnerHeading show={show} >Cart is empty. Check out - <Link to="/catalog">Catalog</Link></StyledInnerHeading>
           }
         </StyledSection>
     )

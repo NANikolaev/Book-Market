@@ -4,6 +4,7 @@ import { CatalogContext } from '../../contexts';
 import poster from '../../assets/images/nightmarket2022.png'
 import Carausel from "../Carousel/Carousel";
 import Bookshelf from '../Bookshelf/Bookshelf';
+
 import { StyledArticle, StyledPoster, StyledSection, StyledHeading } from './elements';
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
       <StyledHeading>Recently Added</StyledHeading>
       <Carausel newest={newest} />
       <StyledHeading>Most Viewed</StyledHeading>
-       <Bookshelf books={top15}/>
+       {top15.length > 0 ? <Bookshelf books={top15}/> : ''}
     </StyledSection>
   )
 };

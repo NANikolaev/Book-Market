@@ -10,6 +10,7 @@ import { genres } from "../../constants";
 
 
 import plusIcon from '../../assets/icons/icons8-plus-math-48.png';
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
 
 import {
@@ -34,13 +35,16 @@ const AddOffer=()=>{
     let showError=useContext(ErrorContext)
     let inputFile = useRef(null);
     let [fileName, setFileName] = useState('');
+    let[show,setShow]=useState(false);
     let outhRequest=useOuthRequest();
 
-   function createOffer(e){
+   function createOffer(e){    
+       setShow(!show)
        create(e,outhRequest)
        .then(book=>{
-          setCatalog(catalog=>[...catalog,book]);
-          navigate(`/book/details/${book._id}`);
+        setCatalog(catalog=>[...catalog,book]);
+        setShow(!show)
+        navigate(`/book/details/${book._id}`);
        })
        .catch(err=>showError(err))
    }
@@ -86,6 +90,7 @@ const AddOffer=()=>{
                 </StyledFormGroup>
                 <StyledSubmitInput type='submit' value="Add"/>
             </StyledForm>
+            <LoadingSpinner show={show} />
         </StyledSection>
     )
 

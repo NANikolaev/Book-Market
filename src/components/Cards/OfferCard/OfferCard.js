@@ -34,7 +34,7 @@ const OfferCard = ({ book,setCatalog }) => {
     return (
             <StyledListItem>
                 <StyledDiv className="offer">
-                    <StyledImage src={book.image.url} />
+                    <StyledImage src={book.image.url} alt='cover' />
                     <Link to={`/book/details/${book._id}`}>Details</Link>
                     <StyledButton onClick={() => setShow(!show)}>Delete</StyledButton>
                 </StyledDiv>

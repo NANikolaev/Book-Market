@@ -28,16 +28,16 @@ export const StyledIcon=styled.img`
  width: 18px;
 `
 export const StyledPopUp=styled(DivContainer)`
-    display: block;
-    position: absolute;
-    padding: 5px;
-    top: -50px;
-    left: 20px;
-    visibility:${props=>props.isOpen ? 'visible' : "hidden"};
-    opacity:${props=>props.isOpen ? '1' : "0"};
-    transition: opacity 0.7s,visibility 0.7s;
-    text-align: center;
-    border-radius: 8px;   
+ display: block;
+ position: absolute;
+ padding: 5px;
+ top: -50px;
+ left: 20px;
+ visibility:${props=>props.isOpen ? 'visible' : "hidden"};
+ opacity:${props=>props.isOpen ? '1' : "0"};
+ transition: opacity 0.7s,visibility 0.7s;
+ text-align: center;
+ border-radius: 8px;   
 `
 export const StyledSmallHeading=styled(SmallHeading)`
  line-height: 1.5;

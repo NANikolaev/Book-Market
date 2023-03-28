@@ -30,7 +30,7 @@ const CartCard=({order,setTotalPrice,setOrders})=>{
    
     return (
         <StyledArticle>
-         <Link to={`/book/details/${order._id}`}><StyledImg src={order.image.url}/></Link>
+         <Link to={`/book/details/${order._id}`}><StyledImg src={order.image.url} alt='cover'/></Link>
           <StyledDiv>
             <StyledInnerHeading>{order.title}</StyledInnerHeading>
             <StyledParagraph>Price: {order.price}$</StyledParagraph>
