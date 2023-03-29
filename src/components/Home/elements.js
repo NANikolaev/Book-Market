@@ -29,7 +29,7 @@ export const StyledArticle = styled(ArticleContainer)`
 export const StyledPoster = styled.img`
  width: 100%;
  height: 100%;
- max-height: 300px;
+ max-height: 340px;
  object-fit: cover cover;
 `
 export const StyledHeading = styled(Heading)`
